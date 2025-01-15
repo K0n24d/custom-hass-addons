@@ -1,5 +1,5 @@
 name: Custom Proxy
-version: "1.1"
+version: "1.2"
 panel_icon: "mdi:cctv"
 panel_title: Custom
 slug: custom-proxy
@@ -28,7 +28,7 @@ options:
   proxy_pass_host: true
   proxy_pass_real_ip: true
 schema:
-  server: "match(^https?://.+:\\d+$)"
+  server: "match(^https?://.+:\\d+.*$)"
   proxy_pass_host: bool
   proxy_pass_real_ip: bool
 services: []
